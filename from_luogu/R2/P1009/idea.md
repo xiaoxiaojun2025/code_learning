@@ -1,0 +1,1 @@
+使用了java的BigInteger类偷懒（雾）
