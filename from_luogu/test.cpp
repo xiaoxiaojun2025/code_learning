@@ -8,12 +8,7 @@ bool isPrimeNumber(int n){
 }
 int main()
 {
-  int count=0,i=2;
-  while(count<2025){
-    if(isPrimeNumber(i)) count++;
-    i++;
-  }
-  cout<<i-1<<endl;
-  // 请在此输入您的代码
+  char c='B';
+  cout<<c<<endl;
   return 0;
 }
