@@ -1,6 +1,9 @@
 #include <iostream>
+#include<vector>
 using namespace std;
 int main()
 {
-  cout<<(6696738825+178)%10007;
+  vector<int> v{1,2};
+  v.clear();
+  cout<<v.size();
 }
