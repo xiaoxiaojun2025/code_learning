@@ -16,6 +16,10 @@ using namespace std;
 NODE*find(NODE*h,int *n){
     NODE*fast=h,*slow=h;
     do{
+        if(fast==nullptr||fast->next==nullptr){
+            *n=0;
+            return NULL;
+        }
         fast=fast->next->next;
         slow=slow->next;
     }while(fast!=slow);

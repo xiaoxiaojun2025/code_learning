@@ -2,26 +2,22 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+int n,a[100010];
+int max_up=1,current_up=1;
 int main(){
-    int n;
     cin>>n;
-    vector<int> data(n);
-    for(auto &i:data) cin>>i;
-    vector<int> max_up(n,1);
-    int max=0;
-    for(int m=0;m<n;m++){
-        auto i=data.begin()+m;
-    while(i!=data.end()){
-        auto j=upper_bound(i+1,data.end(),*i);
-        if(j!=data.end()){
-            max_up[m]++;
-            i=j;
+    for(int i=1;i<=n;i++) cin>>a[i];
+    for(int i=2;i<=n;i++){
+        if(a[i]>a[i-1]){
+            current_up++;
+            if(max_up<current_up) max_up=current_up;
         }
-        else break;
+        else{
+            current_up=1;
+        }
     }
-    if(max_up[m]>max) max=max_up[m];
-}
-    cout<<n-max<<endl;
+    int res=n-max_up;
+    cout<<res<<endl;
     return 0;
     
 }

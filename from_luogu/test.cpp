@@ -2,8 +2,8 @@
 #include<vector>
 using namespace std;
 int main()
-{
-  vector<int> v{1,2};
-  v.clear();
-  cout<<v.size();
+{ int i;
+  bool dp[2];
+  dp[0]=false;
+  cout<<dp[0]<<endl;
 }
