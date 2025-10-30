@@ -14,4 +14,6 @@ add_executable(from_lexue
         "数据结构（C)/线性表/链表原地逆序.cpp"
         "数据结构（C)/线性表/集合基本操作.cpp"
         离散/求命题公式主范式.cpp
-        离散/消解算法.cpp)
+        离散/消解算法.cpp
+        data_structure/Arrays_and_GeneralizedLists/1.cpp
+        data_structure/Arrays_and_GeneralizedLists/1.cpp)
